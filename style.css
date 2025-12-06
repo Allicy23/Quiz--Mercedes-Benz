@@ -1,0 +1,63 @@
+style.css
+body {
+    background: linear-gradient(135deg, #001f3f, #004080, #0074D9);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.screen { display: none; padding: 30px; }
+.hidden { display: none; }
+.screen:not(.hidden) { display: block; }
+
+.logo { width: 150px; margin-bottom: 20px; }
+.logo.small { width: 80px; }
+
+.btn {
+    padding: 15px 25px;
+    background: #00FF88;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover { transform: scale(1.1); }
+
+.q-img {
+    width: 80%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#timer {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#options button {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.3);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#options button:hover {
+    transform: scale(1.05);
+}
+
+.correct {
+    background: #00ff88 !important;
+    color: black !important;
+}
+
+.wrong {
+    background: #ff4444 !important;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Mercedes-Benz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA INICIAL -->
+    <div id="start-screen" class="screen">
+        <img src="logo.png" class="logo">
+        <h1>Quiz Mercedes-Benz</h1>
+        <button id="start-btn" class="btn">Iniciar Quiz</button>
+    </div>
+
+    <!-- TELA DO QUIZ -->
+    <div id="quiz-screen" class="screen hidden">
+        <img src="logo.png" class="logo small">
+        <div id="timer"><span id="timer-number">40</span>s</div>
+        <div id="score-box">Pontos: <span id="score">0</span></div>
+
+        <div id="question"></div>
+
+        <img id="question-img" class="q-img">
+
+        <div id="options"></div>
+    </div>
+
+    <!-- TELA FINAL -->
+    <div id="end-screen" class="screen hidden">
+        <h1 id="end-title"></h1>
+        <p>Sua pontuação foi: <span id="final-score"></span></p>
+        <button id="restart-btn" class="btn">Jogar Novamente</button>
+    </div>
+
+    <script src="page.js"></script>
+</body>
+</html>
